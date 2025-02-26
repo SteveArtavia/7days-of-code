@@ -73,3 +73,10 @@ input[type="number"] {
 .container__form__respuesta{
     font-size: 1.4rem;
 }
+
+@media (max-width: 576px){
+    .container__form{
+        width: auto;
+        border: none;
+    }
+}
