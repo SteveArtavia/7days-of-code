@@ -1,9 +1,21 @@
-let respuesta = document.getElementById("respuesta");
+const nombreEntrada = document.getElementById("nombre");
+const edadEntrada = document.getElementById("edad");
+const lenguajeEntrada = document.getElementById("lenguaje");
+const boton = document.querySelector(".container__form__button");
+const containerForm = document.querySelector(".container__form");
 
-const nombre = document.getElementById("nombre");
-const edad = document.getElementById("edad");
-const lenguaje = document.getElementById("lenguaje");
+// Al enviar la respuesta del formulario
+containerForm.addEventListener("submit", (event) => {
 
-let texto = `Hola ${nombre}, tienes ${edad} años y ya estas aprendiendo ${lenguaje} `;
+    event.preventDefault();
 
-respuesta.innerHTML = texto;
+    let nombre = nombreEntrada.value;
+    let edad = edadEntrada.value;
+    let lenguaje = lenguajeEntrada.value;
+
+    containerForm.innerHTML = `
+    <div class="container__form__respuesta">
+        Hola ${nombre}, tienes ${edad} años y ya estas aprendiendo ${lenguaje}!
+    </div>`;
+
+});

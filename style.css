@@ -3,8 +3,6 @@
     --color-segundo: #301E67;
     --color-tercero: #5B8FB9;
     --color-cuarto: #B6EADA;
-
-    --color-tercero--hover: #5B8FB9;
 }
 *{
     margin: 0;
@@ -12,7 +10,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     height: 100vh;
     background-color: var(--color-primero);
     color: var(--color-tercero)
@@ -40,8 +38,10 @@ body{
     border: none;
     border-bottom: 1px solid var(--color-tercero);
     margin-bottom: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.3rem;
     color: var(--color-cuarto);
+    caret-color: var(--color-cuarto);
 }
 
 .container__form__input:focus{
@@ -66,5 +66,10 @@ input[type="number"] {
     font-weight: bold;
 }
 .container__form__button:hover{
+    background-color: var(--color-cuarto);
+    cursor: pointer;
+}
 
+.container__form__respuesta{
+    font-size: 1.4rem;
 }
