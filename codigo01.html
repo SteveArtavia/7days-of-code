@@ -16,26 +16,32 @@
     <main class="container">
         <a href="index.html" class="link">volver</a>
         <pre class="container__container__codigo"><code class="container__container-codigo__codigo language-javascript">
-            const nombreEntrada = document.getElementById("nombre");
-            const edadEntrada = document.getElementById("edad");
-            const lenguajeEntrada = document.getElementById("lenguaje");
-            const boton = document.querySelector(".container__form__button");
-            const containerForm = document.querySelector(".container__form");
-    
-            // Al enviar la respuesta del formulario
-            containerForm.addEventListener("submit", (event) => {
-    
-                event.preventDefault();
-    
-                let nombre = nombreEntrada.value;
-                let edad = edadEntrada.value;
-                let lenguaje = lenguajeEntrada.value;
-    
-                containerForm.innerHTML = `
-                <div class="container__form__respuesta">
-                    Hola ${nombre}, tienes ${edad} años y ya estas aprendiendo ${lenguaje}!
-                </div>`;
-            });
+            let numeroUno = 1;
+            let stringUno = "1";
+            
+            let numeroTreinta = 30;
+            let stringTreinta = "30";
+            
+            let numeroDiez = 10;
+            let stringDiez = "10";
+            
+            if(numeroUno == stringUno){
+                console.log(`Las variables numeroUno (${numeroUno}) y stringUno (${stringUno}) tienen el mismo valor, pero diferente tipo.`);
+            } else {
+                console.log("Las variables numeroUno y stringUno no tienen el mismo valor");
+            }
+            
+            if(numeroTreinta == stringTreinta){
+                console.log("Las variables numeroTreinta y stringTreinta tienen el mismo valor pero diferente tipo de dato");
+            }else{
+                console.log("Las variables no son del mismo tipo");
+            }
+            
+            if(numeroDiez == stringDiez){
+                console.log("Las variables tienen el mismo valor pero diferente tipo de dato.");
+            }else{
+                console.log("Las variables no tienen el mismo tipo de dato");
+            }
     
         </code></pre>
         
