@@ -1,8 +1,12 @@
 :root{
     --color-primero: #03001C;
-    --color-segundo: #301E67;
-    --color-tercero: #5B8FB9;
-    --color-cuarto: #B6EADA;
+    --color-segundo: #c4a7e7;
+    --color-tercero: #3e8fb0;
+    --color-cuarto: #eb6f92;
+    --color-quinto: #ea9a97;
+    --color-sexto: #f6c177;
+    --color-septimo:#9ccfd8;
+    --color-octavo: #6e6a86;
 }
 *{
     margin: 0;
@@ -13,14 +17,48 @@ body{
     font-family: 'JetBrains Mono', monospace;
     height: 100vh;
     background-color: var(--color-primero);
-    color: var(--color-tercero)
+    color: var(--color-tercero);
+    overflow-y: hidden;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--color-primero);
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.header__nav__logo{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--color-tercero);
+}
+.header__nav__logo:hover{
+    color: var(--color-cuarto);
+}
+.header__nav__links{
+    display: flex;
+    gap: 1.5rem;
+}
+.header__nav__links__link{
+    text-decoration: none;
+    color: var(--color-septimo);
+}
+.header__nav__links__link:hover{
+    color: var(--color-cuarto);
+    border-bottom: 1px solid var(--color-cuarto);
 }
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 .container__form{
     display: flex;
@@ -74,9 +112,35 @@ input[type="number"] {
     font-size: 1.4rem;
 }
 
+.link{
+    margin: 2rem 0;
+    color: var(--color-segundo);
+}
+
+.container__container-codigo__codigo{
+    border: 1px solid var(--color-tercero);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.footer__link{
+    text-decoration: none;
+    color: #6e6a86;
+}
+.footer__link:hover{
+    color: #c4a7e7;
+}
+
 @media (max-width: 576px){
     .container__form{
         width: auto;
         border: none;
+    }
+    .container__container__codigo{
+        display: block;
+        width: 100%;
+        word-wrap: break-word;
     }
 }

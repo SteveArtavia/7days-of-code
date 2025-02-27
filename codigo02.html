@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <title>7 days of code - Codigo 02</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/rose-pine.css">
+
+</head>
+<body>
+
+    <main class="container">
+        <a href="index.html" class="link">volver</a>
+        <pre class="container__container__codigo"><code class="container__container-codigo__codigo language-javascript">
+            const nombreEntrada = document.getElementById("nombre");
+            const edadEntrada = document.getElementById("edad");
+            const lenguajeEntrada = document.getElementById("lenguaje");
+            const boton = document.querySelector(".container__form__button");
+            const containerForm = document.querySelector(".container__form");
+    
+            // Al enviar la respuesta del formulario
+            containerForm.addEventListener("submit", (event) => {
+    
+                event.preventDefault();
+    
+                let nombre = nombreEntrada.value;
+                let edad = edadEntrada.value;
+                let lenguaje = lenguajeEntrada.value;
+    
+                containerForm.innerHTML = `
+                <div class="container__form__respuesta">
+                    Hola ${nombre}, tienes ${edad} años y ya estas aprendiendo ${lenguaje}!
+                </div>`;
+            });
+    
+        </code></pre>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>

@@ -6,11 +6,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <title>7 days of code</title>
+    <title>7 days of code - 02</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
 </head>
 <body>
+
     <header class="header">
         <nav class="header__nav">
             <div>
@@ -29,12 +29,22 @@
     </header>
 
     <main class="container">
-        <h1 class="container__title">7 Days of Code</h1>
+        <h1 class="container__title">7 Days of Code - 02</h1>
+        <form class="container__form">
+            <label for="nombre">Cual es tu nombre?</label>
+            <input class="container__form__input" type="text" id="nombre" autocomplete="off" required>
+
+            <label for="edad">Cual es tu edad?</label>
+            <input class="container__form__input" type="number" id="edad" autocomplete="off" required>
+
+            <label for="lenguaje">Que lenguaje de programacion estas aprendiendo?</label>
+            <input class="container__form__input" type="text" id="lenguaje" autocomplete="off" required>
+
+            <button class="container__form__button">ENVIAR</button>
+        </form>
+        <a href="codigo02.html" class="link">ver codigo</a>
     </main>
 
-    <footer class="footer">
-        <a href="" class="footer__link">&copy By Steve Artavia.</a>
-    </footer>
-
+    <script src="02.js"></script>
 </body>
 </html>
