@@ -160,10 +160,46 @@ input[type="number"]::-webkit-inner-spin-button {
 #tecnologia{
     font-size: 1rem;
 }
+#botones-adivinar{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.boton-adivinar{
+    padding: 1rem;
+    background-color: var(--color-tercero);
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.boton-adivinar:hover{
+    background-color: var(--color-cuarto);
+    cursor: pointer;
+}
+
+@media(max-width: 768px){
+    #botones-adivinar{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .boton-adivinar{
+        font-size: 1.5rem;
+    }
+}
 
 @media (max-width: 576px){
     .container__form{
         width: auto;
         border: none;
+    }
+    #botones-adivinar{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    .boton-adivinar{
+        font-size: 1rem;
     }
 }
