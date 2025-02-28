@@ -129,6 +129,22 @@ input[type="number"]::-webkit-inner-spin-button {
     color: #c4a7e7;
 }
 
+.pregunta{
+    padding-bottom: 2rem;
+}
+
+.button-respuesta{
+    padding: 1rem;
+    background-color: var(--color-tercero);
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+.button-respuesta:hover{
+    background-color: var(--color-cuarto);
+    cursor: pointer;
+}
+
 @media (max-width: 576px){
     .container__form{
         width: auto;
