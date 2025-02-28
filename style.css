@@ -108,12 +108,25 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .link{
-    margin: 2rem 0;
+    margin-top: 3rem;
     color: var(--color-segundo);
+}
+
+.container__container-codigo{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    max-width: 100%;
 }
 
 .container__container-codigo__codigo{
     border: 1px solid var(--color-tercero);
+    height: 70dvh;
+    margin: 2rem;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 .footer{
@@ -144,15 +157,13 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: var(--color-cuarto);
     cursor: pointer;
 }
+#tecnologia{
+    font-size: 1rem;
+}
 
 @media (max-width: 576px){
     .container__form{
         width: auto;
         border: none;
-    }
-    .container__container__codigo{
-        display: block;
-        width: 100%;
-        word-wrap: break-word;
     }
 }
